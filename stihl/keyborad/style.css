@@ -1,0 +1,51 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card{
+  height: 454px;
+  width: 952px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+
+}
+
+.card-name-input,.card-message-input{
+  display: block;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: .40rem;
+  border-radius: 10px;
+  padding: 12px 20px;
+}
+
+
+
+textarea::-webkit-scrollbar {
+  width: 10px;
+ 
+}
+
+textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+textarea::-webkit-scrollbar-thumb {
+background-color: #F37A1F;
+outline: 1px solid slategrey;
+}
+
+button{
+  padding: 10px 60px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+}

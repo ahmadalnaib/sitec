@@ -1,0 +1,35 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-shasow {
+  transition: all 0.3s ease-in-out !important;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.c-shasow:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.c-height {
+  height: 25rem !important;
+}
+
+@media screen and (max-width: 772px) {
+  .swiper-slide {
+    font-size: 1rem;
+  }
+  .swiper {
+    width: 700px;
+    height: 700px;
+  }
+}

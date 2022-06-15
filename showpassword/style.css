@@ -1,0 +1,65 @@
+
+.card{
+  height: 800px;
+  width: 1280px;
+  border: 1px solid #333;
+
+}
+
+.password-show{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ height: 100vh;
+ flex-direction: column;
+ text-align: center;
+}
+
+
+
+
+.pass{
+  position: relative;
+}
+.show-pass-input {
+
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem ;
+ background:#f1f1f1;
+ border: none;
+ border-radius: 5px;
+ color: #333;
+ font-size: 2rem;
+ position: relative;
+
+}
+.toggleP i{
+  background:rgb(71, 100, 206) ;
+  padding: 0.50rem;
+  border-radius: 5px;
+  position: absolute;
+  top: 18px;
+  left: 520px;
+  color: #fff;
+  cursor: pointer;
+ 
+}
+
+
+.next-btn{
+  text-decoration: none;
+  color: #333;
+ background: orange;
+ padding: 10px 40px;
+ position: absolute;
+ bottom: 49px;
+ right: 83px;
+ font-size: 2rem;
+}
+
+.attention{
+  color: #777;
+  text-align: center;
+}
+

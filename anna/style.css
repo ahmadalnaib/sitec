@@ -1,0 +1,26 @@
+
+
+.anna{
+  display: flex;
+  height: 50vh;
+  justify-content: space-around;
+  align-items: center;
+  background: red;
+
+  margin: 40px;
+
+}
+.ato{
+  background: #333;
+  padding: 40px;
+  position: relative;
+}
+.anna h2 {
+  background: #f1f1f1;
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: absolute;
+bottom: 40px;
+  left: 40px;
+
+}

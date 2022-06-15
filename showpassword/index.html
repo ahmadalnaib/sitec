@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="card">
+
+    <div class="password-show">
+     
+          <p class="attention">{{ 'Attention: Be careful that no one other looks at your PIN' | trans}}</p>
+    
+      <div class="">
+          <div class="pass">
+           
+              <input  class="show-pass-input" type="password"  id="password" name="password" value="{{ letter }}{{ pickupTan }}">
+              <span onclick="myFunction()" class="toggleP"><i class="fas fa-key fa-3x" id="togglePassword"></i></span>
+            
+          </div>
+          <a class="next-btn" href="/x-osnabrueck/depositluggage/depositReservation">Next</a> 
+  
+      </div>
+  </div>
+
+
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/ca11177b7a.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>

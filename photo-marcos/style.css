@@ -1,0 +1,18 @@
+body{
+  width: 1280px;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photos{
+
+  display: inline-block;
+  padding: 1rem;
+  width: 400px;
+  height: 40px;
+
+
+}
+

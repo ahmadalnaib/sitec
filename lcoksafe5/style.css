@@ -1,0 +1,43 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#maintenance_menu{
+  font-family: 'OpenSans-SemiBold', sans-serif !important;
+
+    
+
+}
+
+
+.mainmenu{
+
+  height: calc(100vh - 260px);
+   overflow-y: scroll;
+}
+
+.mainmenu li{
+  width: 50%;
+  border-bottom: 1px solid #cccccc;
+  box-sizing: border-box;
+  float: left;
+  min-height: 114px;
+  display: table;
+}
+
+.mainmenu li:nth-child(1n){
+  border-left: 1px solid #cccccc;
+}
+
+.mainmenu li a{
+  padding-left: 25px;
+  padding-right: 25px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.mainmenu-small li{
+  width: 33.33% !important;
+}

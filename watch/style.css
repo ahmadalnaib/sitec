@@ -1,0 +1,63 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+body{
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+img{
+  width: 500px;
+}
+@media (min-width: 992px){
+.watch img {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-timing-function: cubic-bezier(.18,1.15,.5,1.01);
+    animation-timing-function: cubic-bezier(.18,1.15,.5,1.01);
+}
+
+.watch{
+  -webkit-mask-image: url(./img/hero-mask-min.png);
+ -webkit-mask-size: cover;
+  background-image: url(./img/hero-scan.jpg);
+  background-size: cover;
+}
+
+.watch img{
+  -webkit-mask: linear-gradient(to right,#000 0,#000 15%,#ff0 23%, #fff0 37%,#000 45% ,#000 100%);
+  animation-name: watch;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function:cubic-bezier(.42,0,.04,1.29);
+  -webkit-mask-size: 130%;
+  -webkit-mask-repeat: repeat;
+  -webkit-mask-position: 200% 0;
+}
+
+
+@keyframes watch {
+  
+
+0% {
+  -webkit-mask-position: 200% 0;
+  mask-position: 200% 0;
+}
+
+100% {
+  -webkit-mask-position: -250% 0;
+  mask-position: -250% 0;
+
+}
+}
+

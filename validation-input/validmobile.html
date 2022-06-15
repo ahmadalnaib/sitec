@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <style>
+      .error {
+        color: red;
+        size: 80%;
+      }
+      .hidden {
+        display: none;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: linear-gradient(
+          to right,
+          rgba(209, 20, 20, 0.8),
+          rgba(107, 67, 230, 0.4)
+        );
+        color: #fff;
+      }
+
+      input {
+        padding: 0.5rem;
+      }
+
+      button {
+        border: none;
+        padding: 1rem;
+        margin-top: 2rem;
+        text-align: center;
+        background: linear-gradient(to right, #000, #000);
+        color: #fff;
+      }
+
+      form {
+        background: #fff;
+        color: #333;
+        padding: 4rem 10rem;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="p-4">
+      <form id="myform">
+        <div>
+          <label for="myform_phone">Phone:</label>
+          <input
+            type="text"
+            id="myform_phone"
+            name="phone"
+           
+          />
+          <div id="phone_error" class="error hidden">
+            Please enter a valid phone number
+
+            <li>start with +49</li>
+            <li>after +49 most 10 number or more</li>
+          </div>
+        </div>
+        <div class="mt-2">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      function validatePhoneNumber(input_str) {
+        let re = /\(?\+\(?49\)?[ ()]?([- ()]?\d[- ()]?){10}/g;
+
+        return re.test(input_str);
+      }
+
+      function validateForm(event) {
+        let phone = document.getElementById('myform_phone').value;
+        if (!validatePhoneNumber(phone)) {
+          /*make it valid
+      / case 1: starting 0049 123456 , transform 0049 to +49 and validate again. If valid go on
+      /case 2: starting 0 123456 , transform 0 to +49 and remove leading zero and validate again. If valid go on
+      /case 3: 0123/456 , tremove everything except numbers and validate again. If valid go on
+      */
+
+          let phone = document.getElementById('myform_phone').value;
+          console.log(phone);
+          if (phone.substring(0, 2) === '00') {
+            let phone = (document.getElementById('myform_phone').value =
+              '+' + document.getElementById('myform_phone').value.substring(2));
+          } else if (phone.substring(0, 1) === '0') {
+            let phone = (document.getElementById('myform_phone').value =
+              '+49' +
+              document.getElementById('myform_phone').value.substring(1));
+          } else {
+            document.getElementById('phone_error').classList.remove('hidden');
+          }
+        } else {
+          document.getElementById('phone_error').classList.add('hidden');
+          alert('validation success');
+        }
+        event.preventDefault();
+      }
+
+      // submit the form
+      document
+        .getElementById('myform')
+        .addEventListener('submit', validateForm);
+    </script>
+  </body>
+</html>

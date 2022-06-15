@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <div class="invalid-scan">
+
+    <p class="invalid-scan-text">  <i class="fas fa-exclamation-triangle fa-2x invalid-scan-icon">
+ 
+    </i> <br>{{ "INVALID SCAN" }}</p>
+  </div>
+
+ 
+  <div
+  id="popup-fix"
+  style="
+    width: 100%;
+    height: 100%;
+    background: rgb(139, 139, 139, 0.8);
+    position: fixed;
+    z-index: 99999999;
+  "
+>
+  <div
+    class="js--modal sizing--auto no--header"
+    style="
+      top: 0px;
+      width: fit-content;
+      display: block;
+      opacity: 1;
+      height: fit-content;
+      max-width: 750px;
+    "
+  >
+    <div class="header"><div class="title"></div></div>
+    <div class="content" style="height: 100%">
+      <div class="ajax-modal--custom">
+        <div class="field--select">
+          <span class="language--container-outer">
+            <div
+              class="language--btn language--btn--1 language--flag language--flag--individual ar_SY selectable language--flag-txt"
+              data-language-id="1"
+              title="عربي"
+            >
+              عربي
+            </div>
+          </span>
+          <span class="seperator has-language--flag-txt"> &nbsp; </span>
+          <span class="language--container-outer">
+            <div
+              class="language--btn language--btn--4 language--flag language--flag--individual de_DE selectable language--flag-txt"
+              data-language-id="4"
+              title="DE"
+            >
+              DE
+            </div>
+          </span>
+          <span class="seperator has-language--flag-txt"> &nbsp; </span>
+          <span class="language--container-outer">
+            <div
+              class="language--btn language--btn--3 language--flag language--flag--individual en_GB selectable language--flag-txt"
+              data-language-id="3"
+              title="EN "
+            >
+              EN
+            </div>
+          </span>
+        </div>
+        <div class="panel--title is--underline">
+          <center>
+            <picture>
+              <source
+                srcset="
+                  https://mozzaik.cstatic.io/media/image/aa/31/60/logoPIotoHXoEUQMZ.png
+                "
+                media="(min-width: 78.75em)"
+              />
+              <source
+                srcset="
+                  https://mozzaik.cstatic.io/media/image/aa/31/60/logoPIotoHXoEUQMZ.png
+                "
+                media="(min-width: 64em)"
+              />
+              <source
+                srcset="
+                  https://mozzaik.cstatic.io/media/image/aa/31/60/logoPIotoHXoEUQMZ.png
+                "
+                media="(min-width: 48em)"
+              />
+              <img
+                srcset="
+                  https://mozzaik.cstatic.io/media/image/aa/31/60/logoPIotoHXoEUQMZ.png
+                "
+                alt="Mozzaik"
+                style="max-width: 150px"
+              />
+            </picture>
+          </center>
+        </div>
+        <div class="panel--body is--wide">
+          <h1 class="">مرحبا بكم في موزاييك! نحن مغلقون مؤقتا.</h1>
+          <span>
+            يعمل فريقنا حاليًا على تحسينات رئيسية في المستودعات الخاصة بنا و
+            تطوير لائحة المنتجات لتقديم خدمة أفضل لكم. نعتذر عن أي إزعاج
+            ونتطلع إلى الترحيب بكم مجددا في موزاييك أكبر وأفضل قريبًا!
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://kit.fontawesome.com/ca11177b7a.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+img{
+  width: 100%;
+}
+
+.body-white{
+  background: #fff;
+  max-width: 1280px;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 80px;
+
+}
+
+
+.logo-section{
+  width: 1210;
+  height: 635px;
+}
+
+.logo-section .logo{
+  width: 140px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.logo-section h2 {
+  margin-top: 100px;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-family: 'Anton', sans-serif;
+}
+
+.logo-section p {
+  font-size: 1.5rem;
+  color: #555;
+  font-weight: bold;
+}
+
+
+
+.bg-section{
+  background: #CE111E;
+  color: #fff;
+  width: 711px;
+  height: 635px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  
+}
+
+.bg-section h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.bg-section .click{
+  width: 40px;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.bg-section .main{
+  width: 400px;
+  display: block;
+  
+}
+
+/* animations */
+

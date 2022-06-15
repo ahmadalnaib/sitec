@@ -1,0 +1,66 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* header */
+
+
+.first{
+  padding: 2rem;
+  animation: a 1s ease-out infinite;
+}
+
+
+.showcase img{
+  width: 200px;
+}
+.showcase .card{
+  padding: 1rem;
+  margin: 1rem;
+  
+ 
+}
+
+
+.showcase #showcase-text{
+  position: absolute;
+  left: 20px;
+}
+
+
+.show-img{
+  
+width: 100% !important;
+height: 300px;
+object-fit: cover;
+}
+
+.button-move-1{
+  position: absolute;
+  top: 140px;
+  left: 20px;
+  padding: 1.5rem;
+  
+}
+
+.button-move-2{
+  position: absolute;
+  top: 140px;
+  left: 1040px;
+  padding: 1.5rem;
+}
+
+.card{
+  border: none;
+}
+
+
+
+svg{
+  text-align: center;
+  padding-right: 6rem;
+}

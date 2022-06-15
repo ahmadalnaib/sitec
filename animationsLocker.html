@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>anti</title>
+
+  <style>
+    :root {
+  --self-checkout-start-animation-props: 4s ease-in-out infinite forwards;
+  --self-checkout-start-success-delay: 150ms;
+}
+
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #333;
+}
+svg{
+  width: 800px;
+  background:rgba(85, 29, 225, 0.774);
+  border-radius: 20px;
+}
+
+#self-checkout-start line,
+#self-checkout-start path,
+#self-checkout-start rect,
+#self-checkout-start polygon {
+  vector-effect: non-scaling-stroke;
+}
+
+#self-checkout-start {
+  animation: self-checkout-start var(--self-checkout-start-animation-props);
+}
+
+#shelf-door {
+  animation: open-box var(--self-checkout-start-animation-props);
+  transform-origin: 378px -12px;
+   /* transform-origin: 120px 40px;  */
+ 
+}
+
+/* animation for hidden the all page  */
+
+/* Keyframes */
+/* @keyframes self-checkout-start {
+  0% {
+    opacity: 0;
+  }
+
+  10%, 75% {
+    opacity: 1;
+  }
+
+  90%, 100% {
+    opacity: 0;
+  }
+} 
+*/
+
+@keyframes open-box {
+  0%, 20% {
+    transform: scale3d(1, 1, 1) skewY(0deg);
+  }
+
+  50%,100% {
+    transform: scale3d(-0.4, 1, 1) skewY(19deg);
+    
+  }
+  /*  smothooth close */
+ 100% {
+  transform: scale3d(1, 1, 1) skewY(0deg);
+  } 
+}
+  </style>
+</head>
+<body>
+
+  <svg id="self-checkout-start" width="1280px" height="720px" viewBox="0 0 1280 720" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g id="scan-03" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <rect fill="" x="0" y="0" width="1280" height="720"></rect>
+      <g id="cube" transform="translate(377.000000, 365.000000)" stroke="#979797" stroke-width="4">
+          <polyline id="Path-11-Copy-2" points="0 132 49.2265721 26.2124132 49.2265721 1.08169029e-12"></polyline>
+          <line x1="49" y1="26" x2="226" y2="26" id="Path-12-Copy-2"></line>
+          <polyline id="Path-16-Copy" points="263 132 226 26 226 1.59746194e-15"></polyline>
+      </g>
+      <g id="framework" transform="translate(375.000000, -163.000000)">
+          <rect id="panel" fill="#D8D8D8" x="265" y="264" width="265" height="528"></rect>
+          <rect id="screen" fill="#FFFFFF" x="306" y="372" width="184" height="118"></rect>
+          <rect id="scanner" fill="#878787" x="375.5" y="529" width="44" height="59" rx="5"></rect>
+          <g id="shelf" stroke="#979797" stroke-width="4">
+              <rect x="2" y="2" width="526" height="1024"></rect>
+              <line x1="264.5" y1="1.5" x2="264.5" y2="1027.5" id="Line-2-Copy-4"></line>
+              <line x1="2" y1="792" x2="529.5" y2="792.5" id="Line-3-Copy-25"></line>
+              <line x1="2" y1="264" x2="529.5" y2="264.5" id="Line-3-Copy-26"></line>
+              <line x1="2" y1="396" x2="265" y2="396" id="Line-3-Copy-27"></line>
+              <line x1="2" y1="528" x2="265" y2="528" id="Line-3-Copy-28"></line>
+              <line x1="2" y1="660" x2="265" y2="660" id="Line-3-Copy-29"></line>
+          </g>
+      </g>
+      <path
+          d="M602.533472,460.13245 L576.890839,381.450687 C576.220144,379.392728 574.301425,378 572.136932,378 L464.780488,378 C462.42331,378 460.386287,379.646303 459.891761,381.951022 L441.930135,465.660596 L441.930135,465.660596 C444.341597,462.501656 447.717643,460.922185 452.058274,460.922185 C456.398904,460.922185 506.557304,460.922185 602.533472,460.922185 C596.263672,468.293046 596.263672,474.347682 602.533472,479.086093 C606.150664,485.403974 588.064703,483.824503 571.425619,483.824503 C565.155819,483.824503 524.643265,483.824503 449.887958,483.824503 C446.994204,483.824503 444.582743,482.245033 442.653574,479.086093 C440.724404,475.927152 440.483258,471.715232 441.930135,466.450331 C445.306181,462.764901 448.682227,460.922185 452.058274,460.922185"
+          id="book" stroke="#979797" stroke-width="4" fill="#EEEEEE" stroke-linecap="round" stroke-linejoin="round">
+      </path>
+      <polygon id="shelf-door" stroke="#979797" stroke-width="4" fill="#FFFFFF"
+          points="377 365 639.5 365 640.75 497 377 497"></polygon>
+  </g>
+</svg>
+    
+</body>
+</html>

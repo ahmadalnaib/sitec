@@ -1,0 +1,200 @@
+
+<html>
+  <head>
+    <style>
+      .container {
+        max-width: 1280px;
+        margin: 30px auto;
+
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .header {
+        text-align: center;
+        color: #f37a1f;
+      }
+      #customers {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      #customers td,
+      #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      #customers tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      #customers tr:hover {
+        background-color: #ddd;
+      }
+
+      #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #f37a1f;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">STIHL</h1>
+
+      <table id="customers">
+        <tr>
+          <th>Datum:</th>
+          <th>Name:</th>
+          <th>E-Mail Details:</th>
+        </tr>
+        <tr>
+          <td>
+            {{reservation.startDate |date("d.m.y H:i", "Europe/Berlin") }}
+          </td>
+          <td>{{ reservation.options.repairDeliveryName }}</td>
+          <td>{{ reservation.options.repairDeliveryReason }}</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
+
+<!-- 
+  <html lang="en">
+  <head>
+    <style>
+      .header-email {
+        background: #f37a1f;
+        padding: 40px;
+        margin: 4px;
+      }
+      .header-email h2 {
+        text-align: center;
+        color: #fff;
+        letter-spacing: 1px;
+        font-size: 30px;
+      }
+      .section-email {
+        background: #fff;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 20px;
+        padding: 30px;
+        margin: 30px;
+        position: relative;
+      }
+      .datum {
+        position: absolute;
+        top: 50px;
+        right: 10px;
+      }
+      .name-label,
+      .content-label,
+      .datum-label {
+        color: #f37a1f;
+      }
+      .lead-p {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header-email">
+      <h2>STIHL</h2>
+    </div>
+      
+    <div class="section-email">
+ <div>
+          <h2 class="datum">
+           <span class="datum-label">Datum:</span> {{reservation.startDate |date("d.m.y H:i", "Europe/Berlin") }}</h2>
+       </div>
+      <div class="name-email">
+        <div>
+          <h2 ><span class="datum-label">Name:</span>{{ reservation.options.repairDeliveryName }}</h2>
+         
+        </div>
+ 
+      </div>
+      <div class="name-content">
+        <h2 class="content-label">E-Mail Details:</h2>
+        <p class="lead-p">
+          Es wurde Ware abgegeben.<br />
+          <br />
+          <h2 class="name-label">Grund:</h2> <br />
+        {{ reservation.options.repairDeliveryReason }}
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+ -->
+
+ <!-- <html lang="en">
+  <head>
+    <style>
+      .header-email {
+        background: #f37a1f;
+        padding: 40px;
+        margin: 4px;
+      }
+      .header-email h2 {
+        text-align: center;
+        color: #fff;
+        letter-spacing: 1px;
+        font-size: 30px;
+      }
+      .section-email {
+        background: #fff;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 20px;
+        padding: 30px;
+        margin: 30px;
+        position: relative;
+      }
+      .datum {
+        position: absolute;
+        top: 50px;
+        right: 10px;
+      }
+      .name-label,
+      .content-label,
+      .datum-label {
+        color: #f37a1f;
+      }
+      .lead-p {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header-email">
+      <h2>STIHL</h2>
+    </div>
+      
+    <div class="section-email">
+ <div>
+          <h2 class="datum">
+           <span class="datum-label">Datum:</span> {{reservation.startDate |date("d.m.y H:i", "Europe/Berlin") }}</h2>
+       </div>
+      <div class="name-email">
+        <div>
+          <h2 ><span class="datum-label">Name:</span>{{ reservation.options.repairDeliveryName }}</h2>
+         
+        </div>
+ 
+      </div>
+      <div class="name-content">
+        <h2 class="content-label">E-Mail Details:</h2>
+        <p class="lead-p">
+          Es wurde Ware abgegeben. 
+        {{ reservation.options.repairDeliveryReason }}
+        </p>
+      </div>
+    </div>
+  </body>
+</html> -->

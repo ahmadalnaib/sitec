@@ -1,0 +1,761 @@
+
+
+
+@font-face {
+  font-family: REWEMatoWeb;
+  src: local(REWEMatoWeb-Bold), url(../fonts/REWEMatoWebW01-Bold.woff2) format("woff2"), url(../fonts/REWEMatoWebW01-Bold.woff) format("woff"), url(../fonts/REWEMatoWebW01-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: UnitRoundedOT;
+  src: local(UnitRoundedOT), url(../fonts/UnitRoundedOT.woff) format("woff"), url(../fonts/UnitRoundedOT.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: UnitRoundedOT-Medi;
+  src: local(UnitRoundedOT-Medi), url(../fonts/UnitRoundedOT-Medi.woff) format("woff"), url(../fonts/UnitRoundedOT-Medi.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+
+
+*,
+html {
+  box-sizing: border-box;
+  text-transform: none;
+}
+
+/* root colors */
+
+
+
+:root{
+  --primary-color-100:#348d9a;
+  --scondary-color-40:#AED1D7;
+  --thrid-color-20:#D6E8EB;
+  
+}
+
+@keyframes changeBorderColorSuccess {
+  from {
+    border: solid 2px #cccccc;
+  }
+
+  to {
+    border: 2px solid #6fbd14;
+  }
+}
+
+@keyframes changeTextColorSuccess {
+  from {
+    color: #4c4c4c;
+  }
+
+  to {
+    color: #6fbd14;
+  }
+}
+
+@keyframes changeBorderColorSuccessBack {
+  from {
+    border: 2px solid #6fbd14;
+  }
+
+  to {
+    border: solid 2px #cccccc;
+  }
+}
+
+@keyframes changeTextColorSuccessBack {
+  from {
+    color: #6fbd14;
+  }
+
+  to {
+    color: #4c4c4c;
+  }
+}
+
+@keyframes changeBorderColorError {
+  from {
+    border: solid 2px #cccccc;
+  }
+
+  to {
+    border: 2px solid #cc071e;
+  }
+}
+
+@keyframes changeTextColorError {
+  from {
+    color: #4c4c4c;
+  }
+
+  to {
+    color: #cc071e;
+  }
+}
+
+@keyframes changeBorderColorErrorBack {
+  from {
+    border: 2px solid #cc071e;
+  }
+
+  to {
+    border: solid 2px #cccccc;
+  }
+}
+
+@keyframes changeTextColorErrorBack {
+  from {
+    color: #cc071e;
+  }
+
+  to {
+    color: #4c4c4c;
+  }
+}
+
+em {
+  font-style: normal;
+}
+
+#ls5-default a:visited,
+#ls5-default a:focus,
+#ls5-default a:active {
+  color: #fff;
+}
+
+.changeBorderColorSuccess {
+  animation-name: changeBorderColorSuccess;
+  animation-duration: 0.200s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.changeTextColorSuccess {
+  animation-name: changeTextColorSuccess;
+  animation-duration: 0.200s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.changeBorderColorSuccessBack {
+  animation-name: changeBorderColorSuccessBack;
+  animation-duration: 0.200s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.changeTextColorSuccessBack {
+  animation-name: changeTextColorSuccessBack;
+  animation-duration: 0.200s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.changeBorderColorError {
+  animation-name: changeBorderColorError;
+  animation-duration: 0.200s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.changeTextColorError {
+  animation-name: changeTextColorError;
+  animation-duration: 0.200s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.changeBorderColorErrorBack {
+  animation-name: changeBorderColorErrorBack;
+  animation-duration: 0.200s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.changeTextColorErrorBack {
+  animation-name: changeTextColorErrorBack;
+  animation-duration: 0.200s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: both;
+}
+
+#ls5-default span {
+  color: #4c4c4c;
+}
+
+.headline {
+  font-family: REWEMatoWeb;
+  font-size: 64px !important;
+  font-weight: bold !important;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: var(--primary-color-100) !important;
+  display: inline-block;
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
+
+.headline-small {
+  font-family: UnitRoundedOT;
+  font-size: 32px !important;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: var(--primary-color-100) !important;
+}
+
+.normal-text {
+  font-family: UnitRoundedOT;
+  font-size: 32px !important;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #4c4c4c !important;
+}
+
+.small-text {
+  font-family: UnitRoundedOT;
+  font-size: 24px !important;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: var(--primary-color-100) !important;
+  margin: 0px;
+}
+
+
+
+.success {
+  color: #6fbd14 !important;
+  text-align: center;
+  font-size: 32px !important;
+  font-family: UnitRoundedOT-Medi !important;
+}
+
+.denied {
+  color: #cc071e !important;
+  text-align: center;
+  font-size: 32px !important;
+  font-family: UnitRoundedOT-Medi !important;
+}
+
+.idle-main-container {
+  width: 811px;
+  height: 800px;
+  background-color: var(--scondary-color-40);
+  position: absolute;
+  z-index: 3;
+  right: 0px;
+  top: 0px;
+  padding: 72px 64px 88px 64px;
+}
+
+.idle-main-image {
+  background-image: url("../img/Start_Screen_BG@1x.jpg");
+  width: 100%;
+  height: 800px;
+}
+
+.logo {
+  margin: 64px;
+  position: absolute;
+  width: 162px;
+  height: auto;
+  float: left;
+}
+
+.logo-small {
+  margin: 0px;
+  position: absolute;
+  width: 130px;
+  height: auto;
+  float: left;
+  left: 41px;
+  top: 48px;
+}
+
+#logo {
+  z-index: 1;
+  width: 84px;
+  height: 76px;
+}
+
+.address {
+  float: left;
+  width: 100%;
+  border-bottom: 2px solid var(--primary-color-100);
+  padding-bottom: 11px;
+}
+
+.main-button {
+  width: 554px;
+  height: 91px !important;
+  border-radius: 12px;
+  background-color: #cc071e;
+  font-family: UnitRoundedOT-Medi;
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.08;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  padding: 24px 0px;
+  display: block;
+}
+
+.special-button {
+  border: 2px solid #8c8c8c;
+  border-radius: 8px;
+  font-family: UnitRoundedOT-Medi;
+  font-size: 32px;
+  text-align: center;
+  color: #4c4c4c !important;
+  display: block !important;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  background-color: #fff;
+  padding: 16px;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.main-container {
+  float: left;
+  width: 640px;
+  padding: 48px;
+}
+
+.rewe-layout .sub-container {
+  width: 640px;
+  height: 800px;
+  background-color: var(--scondary-color-40);
+  padding: 48px;
+  float: left;
+}
+
+.rewe-layout .sub-container .headline {
+  margin-bottom: 3px;
+}
+
+.rewe-layout .sub-container .normal-text {
+  margin: 20px 0px 0px 0px;
+}
+
+.info-container {
+  padding: 24px;
+  position: absolute;
+  bottom: 48px;
+  background-color: var(--thrid-color-20);
+  max-width: 544px;
+  border-radius: 8px;
+  width: 100%;
+  color: var(--primary-color-100) !important;
+  font-size: 24px !important;
+}
+
+.info-container img {
+  height: 64px;
+  width: auto;
+  margin-right: 16px;
+  float: left;
+}
+
+.rewe-numblock-container {
+  width: 434px;
+  display: block;
+  margin: 0 auto;
+}
+
+.rewe-numblock-container .rewe-numblock li {
+  background-color: transparent;
+  float: left;
+  margin: 12px;
+  border-radius: 8px;
+  border: solid 2px #8c8c8c !important;
+}
+
+.rewe-numblock-container .rewe-numblock li button {
+  width: 116px;
+  height: 88px !important;
+  border: 0px;
+  background-color: transparent;
+  padding: 0px;
+  border-radius: 8px;
+}
+
+.rewe-numblock-container .rewe-numblock li button span {
+  padding: 22px 0px;
+  display: block !important;
+  width: 100% !important;
+  height: inherit;
+  font-family: UnitRoundedOT-Medi !important;
+  font-size: 40px !important;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4c4c4c !important;
+}
+
+#ls5-default .button-login {
+  border: 0px !important;
+}
+
+#ls5-default .button-login {
+  background-color: #6fbd14;
+  width: 121px;
+  height: 91px !important;
+}
+
+#ls5-default .button-remove {
+  background-color: #8c8c8c;
+  width: 121px;
+  height: 91px !important;
+}
+
+.rewe-numblock-container .password-field {
+  height: 88px;
+  border-radius: 12px;
+  border: solid 2px #cccccc;
+  padding: 0px 12px;
+  max-width: 408px;
+  padding: 12px 0px !important;
+  margin: 104px auto 36px auto !important;
+}
+
+.rewe-numblock-container .password-field .password-circle {
+  font-family: UnitRoundedOT;
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #8c8c8c;
+  display: block !important;
+  padding-top: 5px;
+}
+
+.rewe-numblock-container .password-field li {
+  width: 16.666666666666667%;
+  float: left;
+  border-right: 1px solid #cccccc;
+  height: 100%;
+}
+
+.rewe-numblock-container .password-field li:last-child {
+  border-right: none;
+}
+
+.success-container {
+  display: none;
+}
+
+.success-container span {
+  color: #6fbd14;
+}
+
+.success-container span:hover {
+  color: #61a71b;
+}
+
+#ls5-default #back-button,
+#ls5-default #logout {
+  border-radius: 8px;
+  border: solid 2px #829e84;
+  padding: 16px;
+  background-color: transparent;
+  position: relative;
+  text-transform: none;
+  margin: 0px;
+  bottom: 0px;
+  height: auto;
+  font-size: 32px;
+  color: var(--primary-color-100);
+  left: 0px;
+  width: fit-content;
+  font-family: UnitRoundedOT-Medi;
+}
+
+#ls5-default #back-button img,
+#ls5-default #logout img {
+  width: 40px;
+  float: left;
+  margin-right: 12px;
+}
+
+.lsos-status-bar-container {
+  max-width: 544px;
+  height: 36px;
+  border-radius: 16px;
+  background-color: #a9baa8;
+}
+
+.idle-modal-container {
+  width: 100%;
+  height: 800px;
+  background-color: rgba(76, 76, 76, 0.6);
+  position: relative;
+  z-index: 999999;
+  
+}
+
+.idle-modal {
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 974px;
+  height: 689px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 56px;
+  padding: 48px;
+  text-align: center;
+}
+
+.pickup-modal-container {
+  width: 100%;
+  height: 800px;
+  background-color: rgba(76, 76, 76, 0.6);
+  position: relative;
+  z-index: 999999;
+  display: none;
+}
+
+.pickup-modal {
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 974px;
+  height: 689px;
+  border-radius: 12px;
+  background-color: var(--scondary-color-40);
+  position: absolute;
+  top: 56px;
+  padding: 48px;
+  text-align: center;
+}
+
+.modal-hourglass {
+  width: 245px;
+  display: block;
+  margin: 0 auto;
+}
+
+.lsos-status-bar-container .lsos-status-bar {
+  height: 36px;
+  border-radius: 18px;
+  background-color: var(--primary-color-100);
+}
+
+.lsos-status-bar-container .lsos-status-bar .lsos-status-bar-count {
+  color: #ecf3f5 !important;
+  margin-top: 3px !important;
+  font-size: 24px !important;
+  float: right !important;
+  font-family: UnitRoundedOT-Medi !important;
+  text-align: center !important;
+  width: 100%;
+}
+
+.solo-container {
+  background-image: url("../img/Outro_BG@2x.jpg");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.solo-container .solo-container-content {
+  background-color: var(--scondary-color-40);
+  padding: 56px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  max-width: 834px;
+  border-radius: 12px;
+  margin: 0px auto;
+  background-image: url(../img/Start_Screen_BG@1x.png.png);
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.solo-container .solo-container-content .headline {
+  margin: 0px !important;
+}
+
+.pickup-idle .main-button,
+.open-door .main-button {
+  width: 100%;
+  display: inline-block !important;
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pickup-idle .locker-list,
+.open-door .locker-list {
+  padding: 0px;
+}
+
+.pickup-idle .locker-list li,
+.open-door .locker-list li {
+  float: left;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  font-family: REWEMatoWeb !important;
+  padding: 12px 24px;
+  width: 165px;
+  height: 112px;
+  text-align: center;
+}
+
+.pickup-idle .locker-list li .lockernumber,
+.open-door .locker-list li .lockernumber {
+  color: var(--primary-color-100) !important;
+  font-size: 64px !important;
+  font-weight: bold;
+}
+
+.pickup-idle .locker-list li.defectiv-locker .lockernumber, .pickup-idle .locker-list li.defectiv-locker span {
+  color: #ccc !important;
+}
+
+.pickup-idle .locker-list li:nth-child(3n),
+.open-door .locker-list li:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.pickup-idle .locker-list li span,
+.open-door .locker-list li span {
+  font-size: 24px !important;
+  text-align: center;
+  color: #8c8c8c !important;
+  font-family: UnitRoundedOT !important;
+}
+
+.pickup-idle .locker-list li .locker-zone,
+.open-door .locker-list li .locker-zone {
+  display: none;
+  width: 48px;
+  height: 48px;
+  float: left;
+  margin-top: 7px;
+}
+
+.error-text {
+  margin-top: 0px;
+  font-family: UnitRoundedOT-Medi !important;
+  color: #cc071e !important;
+  font-size: 32px !important;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  max-width: 544px;
+  position: absolute;
+}
+
+.vertical-middle {
+  position: relative;
+  height: -webkit-fill-available;
+  display: -webkit-box;
+}
+
+.vertical-middle .vertical-middle-inner {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.feedback-image {
+  width: 154px;
+  margin: 0 auto 32px auto;
+  display: block;
+  height: auto;
+}
+
+.locker-orientation {
+  width: 113px;
+  height: 60px;
+  margin-top: 25px;
+}
+
+.text-color-special {
+  color: var(--primary-color-100) !important;
+}
+
+.open-door-info {
+  display: block;
+  width: 330px;
+  margin: 27px auto 0px auto;
+}
+
+.spinner {
+  margin: 222px auto 0px auto;
+  display: block;
+}
+
+.green-hover {
+  background-color: #61a71b !important;
+}
+
+.grey-hover {
+  background-color: #f6f6f6 !important;
+}
+
+.red-hover {
+  background-color: #a70618 !important;
+}
+
+.dark-hover {
+  background-color: #4c4c4c !important;
+}
+
+.delivery-pin {
+  margin-top: 10px;
+  color: #4c4c4c !important;
+  font-size: 40px !important;
+  text-align: center;
+  font-family: UnitRoundedOT-Medi !important;
+}
+
+

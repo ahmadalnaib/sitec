@@ -1,0 +1,15 @@
+body{
+  background: #fff
+  
+}
+
+div{
+  /* background: hsla(34, 83%, 57%, 0.4);
+  background: #F7D7AE;
+  height: 50vh;
+  color: rgb(236, 156, 53); */
+  background: rgba(48, 107, 68,0.2);
+  height: 100vh;
+}
+
+
