@@ -157,9 +157,7 @@
   }
 }
 
-.z {
-  /* z-index: auto; */
-}
+
 
 .title-product {
   font-weight: 900;
@@ -176,12 +174,12 @@
   margin-top: 11rem !important;
 }
 
-
  .video-wrapper video {
   max-height: 60vh;
   width: 100%;
   object-fit: cover;
 }
+
 @keyframes bgcolor {
   0% {
     background: #ff0000;
