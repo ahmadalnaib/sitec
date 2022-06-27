@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+defer>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Locktec-D-One</title>
+</head>
+<body>
+  <header>
+
+    <nav class="navbar fixed-top navbar-expand-lg  shadow-sm   bg-white ">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img class="" width="100px" src="./img/LockTec-Logo_2021-1-_3_-1-_1_.webp" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item ">
+              <a class="nav-link text-dark    active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle text-dark " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Anwendung
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item " href="#">Action</a></li>
+                <li><a class="dropdown-item " href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark " href="#">Konfigurator</a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle text-dark " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Produkte
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item " href="#">Action</a></li>
+                <li><a class="dropdown-item " href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Software</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Über uns</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Kontakt</a>
+            </li>
+          </ul>
+         
+          <div class="dropdown">
+            <i class="bi bi-translate"></i>   <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                DE
+            </a>
+        
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+             
+              <li><a class="dropdown-item" href="">En</a><li>
+             
+            </ul>
+          </div>
+        
+        
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex flex-column flex-shrink-0 bg-dark ms-auto fix fixed-top sidebar" style="width: 14.5rem;">
+     
+      <ul class="nav nav-pills nav-flush flex-column mb-auto text-center" >
+        <li class="nav-item">
+          <a href="#" class="nav-link border-bottom text-white" aria-current="page"  title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
+            <div class="row">
+              <div class="col-md-4">
+                
+                <i class="bi bi-envelope fa-2x "></i> 
+              </div>
+              <div class="col-md-6 text-center align-content-center justify-content-center mt-2">
+
+                <h4 class="">Email </h4>
+              </div>
+            </div>
+          </a>
+        </li>
+        
+       
+        <li class="nav-item">
+          <a href="#" class="nav-link border-bottom text-white" aria-current="page"  title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
+            <div class="row">
+              <div class="col-md-4">
+                
+                <i class="bi bi-telephone fa-2x "></i> 
+              </div>
+              <div class="col-md-6 text-center align-content-center justify-content-center mt-2">
+
+                <h4 class="">Contact </h4>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link border-bottom text-white" aria-current="page"  title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
+            <div class="row">
+              <div class="col-md-4">
+                
+                <i class="bi bi-megaphone fa-2x"></i>
+              </div>
+              <div class="col-md-6 text-center align-content-center justify-content-center mt-2">
+
+                <h4 class="">Actions</h4>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link border-bottom text-white" aria-current="page"  title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
+            <div class="row">
+              <div class="col-md-4">
+                
+                <i class="bi bi-newspaper fa-2x"></i>
+              </div>
+              <div class="col-md-6 text-center align-content-center justify-content-center mt-2">
+
+                <h4 class="">Newsletter</h4>
+              </div>
+            </div>
+          </a>
+        </li>
+       
+      </ul>
+    
+    </div>
+  </header>
+
+
+
+  <!-- End Navbar -->
+
+
+  <!-- start the header -->
+
+  <div class="bg-light first container mt-5">
+    <div class="container p-5 mb-5">
+      <!-- Swiper -->
+      <div class="swiper ">
+        <div class="swiper-wrapper">
+          <a
+            target="_blank"
+            title="mehr information"
+            href="https://www.locktec.com/"
+            class="swiper-slide showcase-1"
+            data-swiper-autoplay="5000"
+          >
+            <img
+              height="400px"
+              src="./img/aaaaaaaaaaapng.webp"
+              alt=""
+            />
+  
+            <div class="s-content  ">
+              <h2>Cool Locker</h2>
+              <p>
+                Die cool lockers Schließfachanlage ist eine vielseitige,
+                elektronisch steuerbare Abholstation nach neustem Stand der
+                Technik konzipiert
+              </p>
+             
+            </div>
+          </a>
+          <a
+            href="https://www.locktec.com/"
+            class="swiper-slide showcase-2"
+            data-swiper-autoplay="5000"
+          >
+            <img src="./img/h.webp" alt="" />
+            <div class="s-content">
+              <h2>Palettenbox</h2>
+              <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates obcaecati corrupti nobis tenetur maxime porro culpa ex atque, accusamus dolorum.
+              </p>
+            </div>
+          </a>
+          <a
+            href="https://www.locktec.com"
+            class="swiper-slide showcase-2"
+            data-swiper-autoplay="5000"
+          >
+            <img src="./img/velosafe1.webp" alt="" />
+  
+            <div class="s-content">
+              <h2>Velosafe</h2>
+              <p>
+                Hochwertige Mountainbikes, Sportfahrräder oder E-Bikes können in der Fahrradgarage Velosafe sicher vor Wetter und Vandalismus verstaut werden. Dabei ist keine Reservierung im Vorfeld nötig, sondern die Anlage kann spontan angemietet werden.
+              </p>
+            </div>
+          </a>
+          <a
+            href="https://www.locktec.com"
+            class="swiper-slide showcase-2"
+            data-swiper-autoplay="5000"
+          >
+            <img src="./img/locksafe_white.webp" alt="" />
+  
+            <div class="s-content">
+              <h2>LockSafe</h2>
+              <p>
+                Das Gehäuse von Locksafe basic besteht aus <br>1,5 mm dickem
+                Stahlblech, die Türen und Frontblende aus Edelstahl.
+              </p>
+            </div>
+          </a>
+        </div>
+        <!-- Add Pagination -->
+  
+        <div class="swiper-pagination "></div>
+        <div class="swiper-button-prev text-danger"></div>
+        <div class="swiper-button-next text-danger"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end the header -->
+
+
+  <section id="description mt-5">
+    <div class="container">
+      <h2 class="text-danger">Sicherer Warentransfer durch kontaktlose Prozesse</h2>
+      <h3 class="">Mobile Pickup Stationen, Übergabeautomaten und Lieferstationen</h3>
+      <p class="lead">Mit unseren kompakten Stand-Alone Schließfachschränken wollen wir Warenübergabe sicherer machen. Übergabe kann dank der Übergabestationen kontaktlos erfolgen. Unsere Plug & Play Anlagen können im Innen- und Außenbereich aufgestellt werden. Angepasst auf die momentane Situation fokussieren wir unsere Kapazitäten auf solche Schließfachlösungen und können daher kurze Lieferzeiten ermöglichen.</p>
+    </div>
+    <section class="secure container ">
+       
+
+      <h3 class="text-center mt-5">Our contactless pickup stations</h3>
+      <div class="row mt-5 text-center">
+        <div class="col-md-6">
+          <p class="lead">Indoor locker solutions</p>
+          <div class="row ">
+            <div class="col-md-6 ">
+              <div class="card border-0" style="width: 16rem">
+                <img style="height: 40vh;" src="./img/15-Faecherschrank (1).jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title text-danger">11 lockers</h5>
+                
+                  <a href="https://cdn.locktec.com/locktec/pdf/servicebox-aktion/11er-indoor-ohne-preis-en.pdf" class="btn btn-danger" target="_blank">Learn more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card border-0" style="width: 16rem">
+                <img style="height: 40vh;" src="./img/19-Faecherschrank.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title text-danger">15 lockers</h5>
+                
+                  <a href="https://cdn.locktec.com/locktec/pdf/servicebox-aktion/11er-indoor-ohne-preis-en.pdf" class="btn btn-danger" target="_blank">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <p class="lead">Indoor locker solutions</p>
+          <div class="row">
+            <div class="col-md-6">
+              <div  class="card border-0"   style="width: 16rem; ">
+                <img style="height: 40vh;" src="./img/16-Faecherschrank.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title text-danger">16 lockers</h5>
+                
+                  <a href="https://cdn.locktec.com/locktec/pdf/servicebox-aktion/11er-indoor-ohne-preis-en.pdf" class="btn btn-danger" target="_blank">Learn more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card border-0" style="width: 16rem ">
+                <img style="height: 40vh;" src="./img/20-Faecherschrank.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title text-danger">20 lockers</h5>
+                
+                  <a href="https://cdn.locktec.com/locktec/pdf/servicebox-aktion/11er-indoor-ohne-preis-en.pdf" class="btn btn-danger" target="_blank">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+    </section>
+  </section>
+
+
+
+  <!-- 6 grid -->
+  <div class=" grid-six">
+
+    <section id="grid-six">
+      <div class="container">
+        <h2 class="text-center mb-3">Zahlreiche Anwendungsmöglichkeiten..</h2>
+        <div class="row  justify-content-center">
+          <a href="#" class="col photo-1  rounded-2 nav-link d-flex align-items-center justify-content-center flex-column m-2">
+            <h3 class="text-white text-center">Unternehmen</h3>
+            <p class="text-white text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </a>
+          <a href="#" class="col photo-1 rounded-2 nav-link d-flex align-items-center justify-content-center flex-column m-2">
+            <h3 class="text-white text-center">Wohnen</h3>
+            <p class="text-white text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </a>
+          <a href="#" class="col photo-1 rounded-2 nav-link d-flex align-items-center justify-content-center flex-column m-2">
+            <h3 class="text-white text-center">Einkaufszentrum</h3>
+            <p class="text-white text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </a>
+        </div>
+        <div class="row ">
+          <a href="#" class="col photo-1 rounded-2 nav-link d-flex align-items-center justify-content-center flex-column m-2">
+            <h3 class="text-white text-center">Click & Collect</h3>
+            <p class="text-white text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </a>
+          <a href="#" class="col photo-1 rounded-2 nav-link d-flex align-items-center justify-content-center flex-column m-2">
+            <h3 class="text-white text-center">Service</h3>
+            <p class="text-white text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </a>
+          <a href="#" class="col photo-1 rounded-2 nav-link d-flex align-items-center justify-content-center flex-column m-2">
+            <h3 class="text-white text-center">Öffentlicher Raum</h3>
+            <p class="text-white text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </a>
+        </div>
+    
+    
+      </div>
+    </section>
+  </div>
+
+
+
+  <!-- logos section -->
+  <div class="container overflow-hidden h-100 mt-5">
+    <hr>
+    <div class="row align-items-center h-100">
+      <div class="container rounded">
+        <h2></h2>
+        <div class="slider">
+          <div class="logos">
+            <i class="fab fa-js fa-4x"></i>
+            <i class="fab fa-linkedin-in fa-4x"></i>
+            <i class="fab fa-dribbble fa-4x"></i>
+            <i class="fab fa-medium-m fa-4x"></i>
+            <i class="fab fa-github fa-4x"></i>
+          </div>
+          <div class="logos">
+            <i class="fab fa-js fa-4x"></i>
+            <i class="fab fa-linkedin-in fa-4x"></i>
+            <i class="fab fa-dribbble fa-4x"></i>
+            <i class="fab fa-medium-m fa-4x"></i>
+            <i class="fab fa-github fa-4x"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <hr>
+  </div>
+
+
+
+  
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/ca11177b7a.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
