@@ -17,9 +17,9 @@ defer>
 <body>
   <header>
 
-    <nav class="navbar fixed-top navbar-expand-lg  shadow-sm   bg-white ">
+    <nav class="navbar fixed-top navbar-expand-lg     bg-white ">
       <div class="container">
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="index.html">
           <img class="" width="100px" src="./img/LockTec-Logo_2021-1-_3_-1-_1_.webp" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,7 @@ defer>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
             <li class="nav-item ">
-              <a class="nav-link text-dark    active" aria-current="page" href="#">Home</a>
+              <a class="nav-link text-dark    active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item dropdown ">
               <a class="nav-link dropdown-toggle text-dark " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -60,11 +60,12 @@ defer>
               <a class="nav-link text-dark" href="#">Software</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Über uns</a>
+              <a class="nav-link text-dark" href="about.html">Über uns</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-dark" href="#">Kontakt</a>
             </li>
+        
           </ul>
          
           <div class="dropdown">
@@ -78,7 +79,17 @@ defer>
              
             </ul>
           </div>
+
+          
+          <li class="nav-link ms-2">
+           
+              <input disabled data-bs-toggle="modal" data-bs-target="#exampleModal" class="form-control me-2"  placeholder="Search" aria-label="Search">
+           
+
+            
         
+
+            </li>
         
         </div>
       </div>
@@ -149,8 +160,33 @@ defer>
     
     </div>
   </header>
-
-
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Search</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="https://duckduckgo.com/" method="get" id="form-search">
+            <div class="mb-3">
+             
+              <input class="form-control me-2" type="search" name="q" id="input-search" placeholder="Search" aria-label="Search">
+              <input type="hidden" name="sites" value="your-domain.com">
+            </div>
+            <div class="mb-3">
+              <div id="search-results"></div>
+            </div>
+          </form>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+         
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- End Navbar -->
 
@@ -162,6 +198,30 @@ defer>
       <!-- Swiper -->
       <div class="swiper ">
         <div class="swiper-wrapper">
+          <a
+          target="_blank"
+          title="mehr information"
+          href="https://www.locktec.com/"
+          class="swiper-slide showcase-1"
+          data-swiper-autoplay="5000"
+        >
+          <img
+            height="400px"
+            src="./img/servicebox.webp"
+            alt=""
+          />
+
+          <div class="s-content  ">
+            <h2>Service Box</h2>
+            <p>
+              
+              Die cool lockers Schließfachanlage ist eine vielseitige,
+              elektronisch steuerbare Abholstation nach neustem Stand der
+              Technik konzipiert
+            </p>
+           
+          </div>
+        </a>
           <a
             target="_blank"
             title="mehr information"
@@ -240,7 +300,7 @@ defer>
   <!-- end the header -->
 
 
-  <section id="description mt-5">
+  <section id="description">
     <div class="container">
       <h2 class="text-danger">Sicherer Warentransfer durch kontaktlose Prozesse</h2>
       <h3 class="">Mobile Pickup Stationen, Übergabeautomaten und Lieferstationen</h3>
@@ -308,13 +368,55 @@ defer>
   </section>
 
 
+  <!-- ups -->
+  <section id="ups" class="bg-light p-5">
+    <div class="container">
+
+      <h2>Profis für Schließfächer</h2>
+      <p class="lead">LockTec ist ein weltweit führender Hersteller elektronischer Schließfachanlagen. Seit über 35 Jahren entwickeln und produzieren wir patentierte Schließfachlösungen für verschiedenste Anwendungsbereiche. Mehr als 50.000 installierte Schließfächer in 30 Ländern sprechen für sich. 
+   
+       LockTec ist Teil einer mittelständischen, inhabergeführten Unternehmensgruppe im oberfränkischen Weissenbrunn mit über 100 Mitarbeitern. Wie das Mutterunternehmen SITEC legt LockTec höchste Priorität auf das Qualitätsmerkmal  <strong>"Made in Germany"</strong>.</p>
+
+
+       <div class="row bg-white rounded-1 p-4 justify-content-center ">
+        <h2 class="text-danger mb-5 fs-1 text-center">
+          FULL SERVICE
+        </h2>
+        <div class="col-md-6">
+          <h3 class=""> <i class="bi bi-kanban fa-1x text-danger"></i> PROJECT MANAGEMENT</h3>
+          <p class="lead">
+            We plan and project manage your locker system right up to networking.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h3 class=""> <i class="bi bi-boxes fa-1x text-danger"></i> PRODUCTION</h3>
+          <p class="lead">
+            The locker banks will be manufactured using the latest technology in accordance with your requirements.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h3 class=""><i class="bi bi-bookmark-check-fill fa-1x text-danger"></i> INSTALLATION</h3>
+          <p class="lead">
+            We deliver and install the locker bank and train your employees.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h3 class=""><i class="bi bi-question-circle-fill fa-1x text-danger"></i> SERVICE</h3>
+          <p class="lead">
+            Even after delivery we are happy to help.
+          </p>
+        </div>
+       </div>
+    </div>
+  </section>
+
 
   <!-- 6 grid -->
   <div class=" grid-six">
 
     <section id="grid-six">
       <div class="container">
-        <h2 class="text-center mb-3">Zahlreiche Anwendungsmöglichkeiten..</h2>
+        <h2 class="text-center mb-3">Zahlreiche Anwendungsmöglichkeiten</h2>
         <div class="row  justify-content-center">
           <a href="#" class="col photo-1  rounded-2 nav-link d-flex align-items-center justify-content-center flex-column m-2">
             <h3 class="text-white text-center">Unternehmen</h3>
@@ -380,8 +482,171 @@ defer>
   </div>
 
 
+<!-- blog -->
 
+<section id="blogs" class="bg-light p-5">
+  <h2 class="text-center mb-3">Aktuelles Nachichten</h2>
+<div class="container">
+  <div class="card-group">
+    <div class="card">
+      <img s src="./img/Servicebox_Paketstation_click_collect.jpg" class="card-img-top h-50" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="text-danger">Weiterlesen <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/aa.webp" class="card-img-top h-50" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="text-danger">Weiterlesen <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/Velosafe_Lindau.jpg" class="card-img-top h-50" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="text-danger">Weiterlesen <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!-- icons svg -->
+
+<section id="iconlockers">
+  <div class="container">
+<div class="d-flex justify-content-center align-content-center text-center">
+    <a href="#" class="col nav-link">
+      <img src="./img/iconTwo.svg" alt="">
+      <h5 class="text-danger text-center">Cool Locker</h5>
+      <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, nesciunt.</p>
+    </a>
+    <a href="#" class="col nav-link">
+      <img src="./img/iconThree.svg" alt="">
+      <h5 class="text-danger text-center">ServiceBox</h5>
+      <p class="text-center">Lorem ipsum dolor sit amet.</p>
+    </a>
+    <a href="#" class="col nav-link">
+      <img src="./img/iconFour.svg" alt="">
+      <h5 class="text-danger text-center">Velosafe</h5>
+      <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos.</p>
+    </a>
+    <a href="#" class="col nav-link">
+      <img src="./img/iconFive.svg" alt="">
+      <h5 class="text-danger text-center">Locksafe</h5>
+      <p class="text-center">Lorem ipsum dolor sit amet.</p>
+    </a>
+    <a href="#" class="col nav-link">
+      <img src="./img/iconOne.svg" alt="">
+      <h5 class="text-danger text-center">Palettenbox</h5>
+      <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis nam sint facere libero tempore maiores.</p>
+    </a>
+    
+  </div>
+  </div>
+</section>
+
+
+
+<!-- footer -->
+<section id="footer" class="bg-light">
+
+  <div class="container">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Navigation</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Anwendung</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Konfigurator</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Software</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Über uns</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kontakt</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">News</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Actions</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Service</a></li>
+            
+          </ul>
+        </div>
   
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Produkte</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cool Lockers</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Locksafe</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Servicbox</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Velosafe</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Palettenbox</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Hilfe</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">AGB</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Datenschutz</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Downloads</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Karriere</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Impressum</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cookies</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-danger" type="button">Subscribe</button>
+
+            </div>
+          </form>
+          <div class="mt-5">
+            <a href="#">
+
+              <img style="height:40px ;" src="./img/sitec-logo.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2022 Locktec, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram fa-2x"></i></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-youtube fa-2x"></i></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-facebook fa-2x"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+    
+</section>
+<!--       
+<li class="nav-link ms-2">
+  <form action="https://duckduckgo.com/" method="get" id="form-search" class="d-flex" role="search">
+    <input class="form-control me-2" type="search" name="q" id="input-search" placeholder="Search" aria-label="Search">
+    <input type="hidden" name="sites" value="your-domain.com">
+    <div id="search-results"></div>
+  </form>
+  </li> -->
+
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
