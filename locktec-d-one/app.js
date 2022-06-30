@@ -1,3 +1,5 @@
+
+
 // const tl = gsap.timeline({
 //   scrollTrigger: {
 //     trigger: '.swiper-wrapper',
@@ -59,26 +61,7 @@
 
 // swiper
 
-const swiper = new Swiper('.swiper', {
- 
-  slidesPerView: 1,
-  spaceBetween: 30,
-  centeredSlides: true,
-  loop: true,
 
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-  
-  },
-});
 
 
 window.addEventListener('scroll',(e)=>{
@@ -114,18 +97,16 @@ let searchIndex = [
 	{
 		title: "servicebox",
 		url: "https://www.locktec.com/produkte/cool-lockers/",
+		summary: "A "
 
 	},
 	{
 		title: "contect",
 		url: "https://www.locktec.com/produkte/cool-lockers/",
+		summary: "A "
 
 	},
-	{
-		title: "kontakt",
-		url: "https://www.locktec.com/produkte/cool-lockers/",
 
-	},
 	// More content...
 ];
 
@@ -156,13 +137,14 @@ let searchIndex = [
 	 */
 	let createHTML = function (article, id) {
 		let html =
-			'<div id="search-result-' + id + '">' +
-				'<a href="' + article.url + '">' +
+			'<div class="" id="search-result-' + id + '">' +
+				'<a class="nav-link s p-1" href="' + article.url + '">' +
 				
-					'<h2>' + article.title + '</h2>' +
-          '<p>' +article.summary  +'</p>'
+					'<h6 class="fw-bold ">'  + article.title + ' ' +'<i class="bi bi-box-arrow-up-right"></i>' + '</h6>' +
+          '<small class="lead">' +article.summary  +'</small>'
 				
 				'</a>' +
+			
 			'</div>';
 		return html;
 	};
@@ -181,7 +163,7 @@ let searchIndex = [
 	 * @return {String}        The results HTML
 	 */
 	let createResultsHTML = function (results) {
-		let html = '<p>Found ' + results.length + ' matching articles</p>';
+		let html = '<p>Found ' + results.length + ' matching </p>';
 		html += results.map(function (article, index) {
 			return createHTML(article, index);
 		}).join('');
@@ -198,17 +180,17 @@ let searchIndex = [
 		let reg = new RegExp(query, 'gi');
 		let priority1 = [];
 		let priority2 = [];
-		let priority3 = [];
+	
 
 		// Search the content
 		searchIndex.forEach(function (article) {
 			if (reg.test(article.title)) return priority1.push(article);
 			if (reg.test(article.title)) priority2.push(article);
-			if (reg.test(article.title)) priority3.push(article);
+			
 		});
 
 		// Combine the results into a single array
-		let results = [].concat(priority1, priority2,priority3);
+		let results = [].concat(priority1, priority2);
 
 		// Display the results
 		resultList.innerHTML = results.length < 1 ? createNoResultsHTML() : createResultsHTML(results);
@@ -234,4 +216,35 @@ let searchIndex = [
 	// Create a submit handler
 	form.addEventListener('keyup', submitHandler);
 
+
 })(window, document);
+
+
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:1,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+		nav: true
+});
+
+
+var swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});

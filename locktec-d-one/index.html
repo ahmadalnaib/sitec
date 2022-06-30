@@ -5,19 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-defer>
+
+<link rel="stylesheet" href="owl.carousel.min.css">
+<link rel="stylesheet" href="owl.theme.default.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css">
   <title>Locktec-D-One</title>
 </head>
 <body>
+
+  <!-- Start the  Navbar -->
   <header>
 
-    <nav class="navbar fixed-top navbar-expand-lg     bg-white ">
+    <nav class="navbar fixed-top navbar-expand-lg  bg-white p-4">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img class="" width="100px" src="./img/LockTec-Logo_2021-1-_3_-1-_1_.webp" alt="">
@@ -26,50 +27,50 @@ defer>
           <span class="navbar-toggler-icon "></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
             <li class="nav-item ">
-              <a class="nav-link text-dark    active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link text-muted  fw-bold nav-f " aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item dropdown ">
-              <a class="nav-link dropdown-toggle text-dark " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-muted     fw-bold nav-f" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Anwendung
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item " href="#">Action</a></li>
-                <li><a class="dropdown-item " href="#">Another action</a></li>
+                <li><a class="dropdown-item text-muted  fw-bold nav-f " href="#">Action</a></li>
+                <li><a class="dropdown-item text-muted fw-bold nav-f" href="#">Another action</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item text-muted  fw-bold nav-f" href="#">Something else here</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark " href="#">Konfigurator</a>
+              <a class="nav-link  text-muted  fw-bold nav-f  " href="#">Konfigurator</a>
             </li>
             <li class="nav-item dropdown ">
-              <a class="nav-link dropdown-toggle text-dark " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle  text-muted  fw-bold nav-f " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Produkte
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item " href="#">Action</a></li>
-                <li><a class="dropdown-item " href="#">Another action</a></li>
+                <li><a class="dropdown-item  text-muted  fw-bold nav-f " href="#">Action</a></li>
+                <li><a class="dropdown-item  text-muted  fw-bold nav-f " href="#">Another action</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item  text-muted  fw-bold nav-f " href="#">Something else here</a></li>
               </ul>
             </li>
           
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Software</a>
+              <a class="nav-link  text-muted  fw-bold nav-f " href="software.html">Software</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="about.html">Über uns</a>
+              <a class="nav-link  text-muted  fw-bold nav-f " href="about.html">Über uns</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Kontakt</a>
+              <a class="nav-link  text-muted  fw-bold nav-f " href="contact.html">Kontakt</a>
             </li>
         
           </ul>
          
           <div class="dropdown">
-            <i class="bi bi-translate"></i>   <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-translate "></i>   <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                 DE
             </a>
         
@@ -81,14 +82,9 @@ defer>
           </div>
 
           
-          <li class="nav-link ms-2">
-           
-              <input disabled data-bs-toggle="modal" data-bs-target="#exampleModal" class="form-control me-2"  placeholder="Search" aria-label="Search">
-           
-
-            
-        
-
+          <li class="nav-link ms-4 pe-auto " data-bs-toggle="modal" data-bs-target="#exampleModal">
+           <a href="#" class="nav-link">  <i class="bi bi-search"></i></a>
+          
             </li>
         
         </div>
@@ -160,9 +156,11 @@ defer>
     
     </div>
   </header>
+  <!-- End the Navbar -->
   
+  <!-- Start  model for search -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Search</h5>
@@ -176,133 +174,84 @@ defer>
               <input type="hidden" name="sites" value="your-domain.com">
             </div>
             <div class="mb-3">
-              <div id="search-results"></div>
+              <div id="search-results" class="m-4 p-4"></div>
             </div>
           </form>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
          
           </div>
         </div>
       </div>
     </div>
   </div>
+  <!-- End Model -->
 
-  <!-- End Navbar -->
-
-
-  <!-- start the header -->
-
-  <div class="bg-light first container mt-5">
+  <!-- start the slider -->
+  <div class="bg-light first  mt-5">
     <div class="container p-5 mb-5">
       <!-- Swiper -->
-      <div class="swiper ">
-        <div class="swiper-wrapper">
-          <a
-          target="_blank"
-          title="mehr information"
-          href="https://www.locktec.com/"
-          class="swiper-slide showcase-1"
-          data-swiper-autoplay="5000"
-        >
-          <img
-            height="400px"
-            src="./img/servicebox.webp"
-            alt=""
-          />
-
-          <div class="s-content  ">
-            <h2>Service Box</h2>
-            <p>
-              
-              Die cool lockers Schließfachanlage ist eine vielseitige,
-              elektronisch steuerbare Abholstation nach neustem Stand der
-              Technik konzipiert
-            </p>
-           
-          </div>
-        </a>
-          <a
-            target="_blank"
-            title="mehr information"
-            href="https://www.locktec.com/"
-            class="swiper-slide showcase-1"
-            data-swiper-autoplay="5000"
-          >
-            <img
-              height="400px"
-              src="./img/aaaaaaaaaaapng.webp"
-              alt=""
-            />
-  
-            <div class="s-content  ">
-              <h2>Cool Locker</h2>
-              <p>
-                Die cool lockers Schließfachanlage ist eine vielseitige,
-                elektronisch steuerbare Abholstation nach neustem Stand der
-                Technik konzipiert
-              </p>
-             
-            </div>
-          </a>
-          <a
-            href="https://www.locktec.com/"
-            class="swiper-slide showcase-2"
-            data-swiper-autoplay="5000"
-          >
-            <img src="./img/h.webp" alt="" />
-            <div class="s-content">
-              <h2>Palettenbox</h2>
-              <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates obcaecati corrupti nobis tenetur maxime porro culpa ex atque, accusamus dolorum.
-              </p>
-            </div>
-          </a>
-          <a
-            href="https://www.locktec.com"
-            class="swiper-slide showcase-2"
-            data-swiper-autoplay="5000"
-          >
-            <img src="./img/velosafe1.webp" alt="" />
-  
-            <div class="s-content">
-              <h2>Velosafe</h2>
-              <p>
-                Hochwertige Mountainbikes, Sportfahrräder oder E-Bikes können in der Fahrradgarage Velosafe sicher vor Wetter und Vandalismus verstaut werden. Dabei ist keine Reservierung im Vorfeld nötig, sondern die Anlage kann spontan angemietet werden.
-              </p>
-            </div>
-          </a>
-          <a
-            href="https://www.locktec.com"
-            class="swiper-slide showcase-2"
-            data-swiper-autoplay="5000"
-          >
-            <img src="./img/locksafe_white.webp" alt="" />
-  
-            <div class="s-content">
-              <h2>LockSafe</h2>
-              <p>
-                Das Gehäuse von Locksafe basic besteht aus <br>1,5 mm dickem
-                Stahlblech, die Türen und Frontblende aus Edelstahl.
-              </p>
-            </div>
-          </a>
+      <div class="owl-carousel owl-theme">
+      
+      <div class="row  justify-content-around  align-items-center">
+        <div class="col-md-6">
+          <img src="./img/servicebox.webp" alt="">
         </div>
-        <!-- Add Pagination -->
-  
-        <div class="swiper-pagination "></div>
-        <div class="swiper-button-prev text-danger"></div>
-        <div class="swiper-button-next text-danger"></div>
+        <div class="col-md-4  col-sm-6">
+          <h2 class="text-danger size-2">ServiceBox</h2>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae vitae voluptates molestias ea repellendus corporis earum eius sed pariatur.</p>
+          <a href="#" class="btn btn-outline-danger ">Weitere Information</a>
+        </div>
+      </div>
+      <div class="row  justify-content-around  align-items-center">
+        <div class="col-md-6">
+          <img class="d-inline" style="width: 50%;" src="./img/locksafe-basic1.webp" alt="">
+          
+        </div>
+        <div class="col-md-4">
+          <h2 class="text-danger size-2">Locksafe</h2>
+          <p class="lead ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae vitae voluptates molestias ea repellendus corporis earum eius sed pariatur.</p>
+          <a href="#" class="btn btn-outline-danger ">Weitere Information</a>
+        </div>
+      </div>
+      <div class="row  justify-content-around  align-items-center">
+        <div class="col-md-6">
+          <img src="./img/velosafe1.webp" alt="">
+        </div>
+        <div class="col-md-4">
+          <h2 class="text-danger size-2">Velosafe</h2>
+          <p class="lead ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae vitae voluptates molestias ea repellendus corporis earum eius sed pariatur.</p>
+          <a href="#" class="btn btn-outline-danger ">Weitere Information</a>
+        </div>
+      </div>
+      <div class="row  justify-content-around  align-items-center">
+        <div class="col-md-6">
+          <img src="./img/aaaaaaaaaaapng.webp" alt="">
+        </div>
+        <div class="col-md-4">
+          <h2 class="text-danger size-2">Cool Lockers</h2>
+          <p class="lead ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae vitae voluptates molestias ea repellendus corporis earum eius sed pariatur.</p>
+          <a href="#" class="btn btn-outline-danger ">Weitere Information</a>
+        </div>
+      </div>
+      <div class="row  justify-content-around  align-items-center">
+        <div class="col-md-6">
+          <img src="./img/h.webp" alt="">
+        </div>
+        <div class="col-md-4">
+          <h2 class="text-danger size-2">Palettenbox</h2>
+          <p class="lead ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae vitae voluptates molestias ea repellendus corporis earum eius sed pariatur.</p>
+        </div>
+      </div>
       </div>
     </div>
   </div>
+  <!-- end the slider -->
 
-  <!-- end the header -->
-
-
+  <!-- Start desc section -->
   <section id="description">
     <div class="container">
-      <h2 class="text-danger">Sicherer Warentransfer durch kontaktlose Prozesse</h2>
+      <h2 class="text-danger size-2">Sicherer Warentransfer durch kontaktlose Prozesse</h2>
       <h3 class="">Mobile Pickup Stationen, Übergabeautomaten und Lieferstationen</h3>
       <p class="lead">Mit unseren kompakten Stand-Alone Schließfachschränken wollen wir Warenübergabe sicherer machen. Übergabe kann dank der Übergabestationen kontaktlos erfolgen. Unsere Plug & Play Anlagen können im Innen- und Außenbereich aufgestellt werden. Angepasst auf die momentane Situation fokussieren wir unsere Kapazitäten auf solche Schließfachlösungen und können daher kurze Lieferzeiten ermöglichen.</p>
     </div>
@@ -366,82 +315,94 @@ defer>
  
     </section>
   </section>
+  <!-- End desc section -->
 
 
-  <!-- ups -->
-  <section id="ups" class="bg-light p-5">
+  <!-- Start ups section-->
+  <section id="ups" class="bg-light p-5 ">
     <div class="container">
 
-      <h2>Profis für Schließfächer</h2>
+      <h2 class="size-2">Profis für Schließfächer</h2>
       <p class="lead">LockTec ist ein weltweit führender Hersteller elektronischer Schließfachanlagen. Seit über 35 Jahren entwickeln und produzieren wir patentierte Schließfachlösungen für verschiedenste Anwendungsbereiche. Mehr als 50.000 installierte Schließfächer in 30 Ländern sprechen für sich. 
    
        LockTec ist Teil einer mittelständischen, inhabergeführten Unternehmensgruppe im oberfränkischen Weissenbrunn mit über 100 Mitarbeitern. Wie das Mutterunternehmen SITEC legt LockTec höchste Priorität auf das Qualitätsmerkmal  <strong>"Made in Germany"</strong>.</p>
 
 
-       <div class="row bg-white rounded-1 p-4 justify-content-center ">
+       <div class="row  rounded-1 p-4 justify-content-center ">
         <h2 class="text-danger mb-5 fs-1 text-center">
-          FULL SERVICE
+         title
         </h2>
-        <div class="col-md-6">
-          <h3 class=""> <i class="bi bi-kanban fa-1x text-danger"></i> PROJECT MANAGEMENT</h3>
+        <div class="col-md-4 shadow-sm p-3 bg-white ">
+          <h4 class="size-5"> <img src="./img/hand.svg" alt=""> Alles aus einer Hand</h4>
           <p class="lead">
-            We plan and project manage your locker system right up to networking.
+           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, asperiores!.
           </p>
         </div>
-        <div class="col-md-6">
-          <h3 class=""> <i class="bi bi-boxes fa-1x text-danger"></i> PRODUCTION</h3>
+        <div class="col-md-4 shadow-sm p-3 bg-white ">
+          <h4 class="size-5"> <img src="./img/plug.svg" alt=""> Plug& Play</h4>
           <p class="lead">
-            The locker banks will be manufactured using the latest technology in accordance with your requirements.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas est dolorem quidem.
           </p>
         </div>
-        <div class="col-md-6">
-          <h3 class=""><i class="bi bi-bookmark-check-fill fa-1x text-danger"></i> INSTALLATION</h3>
+        <div class="col-md-4 shadow-sm p-3  bg-white ">
+          <h4 class="size-5"><img src="./img/nach.svg" alt=""> Nachhaltigkeit</h4>
           <p class="lead">
-            We deliver and install the locker bank and train your employees.
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, natus.
           </p>
         </div>
-        <div class="col-md-6">
-          <h3 class=""><i class="bi bi-question-circle-fill fa-1x text-danger"></i> SERVICE</h3>
+        <div class="col-md-4 shadow-sm p-3 bg-white ">
+          <h4 class="size-5"><img src="./img/monetar.svg" alt=""> Monetarisierung</h4>
           <p class="lead">
-            Even after delivery we are happy to help.
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, explicabo.
+          </p>
+        </div>
+        <div class="col-md-4 shadow-sm p-3 bg-white ">
+          <h4 class="size-5"><img src="./img/madeingermany.svg" alt=""> Made in Germany</h4>
+          <p class="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, iusto.
+          </p>
+        </div>
+        <div class="col-md-4 shadow-sm p-3 bg-white ">
+          <h4 class="size-5"><img src="./img/service.svg" alt=""> Servicekompetenz</h4>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, pariatur.
           </p>
         </div>
        </div>
     </div>
   </section>
+  <!-- End ups section -->
 
-
-  <!-- 6 grid -->
-  <div class=" grid-six">
-
+  <!-- start 6 grid  section-->
+  <div class="grid-six">
     <section id="grid-six">
       <div class="container">
-        <h2 class="text-center mb-3">Zahlreiche Anwendungsmöglichkeiten</h2>
+        <h2 class="mb-5 size-2">Zahlreiche Anwendungsmöglichkeiten</h2>
         <div class="row  justify-content-center">
-          <a href="#" class="col photo-1  rounded-2 nav-link d-flex align-items-center justify-content-center flex-column m-2">
-            <h3 class="text-white text-center">Unternehmen</h3>
+          <a href="#" class="col photo-1   rounded-2 nav-link d-flex align-items-center justify-content-center flex-column m-2">
+            <h3 class="text-white text-center size-3">Unternehmen</h3>
             <p class="text-white text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
           </a>
           <a href="#" class="col photo-1 rounded-2 nav-link d-flex align-items-center justify-content-center flex-column m-2">
-            <h3 class="text-white text-center">Wohnen</h3>
+            <h3 class="text-white text-center size-3">Wohnen</h3>
             <p class="text-white text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
           </a>
           <a href="#" class="col photo-1 rounded-2 nav-link d-flex align-items-center justify-content-center flex-column m-2">
-            <h3 class="text-white text-center">Einkaufszentrum</h3>
+            <h3 class="text-white text-center size-3">Einkaufszentrum</h3>
             <p class="text-white text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
           </a>
         </div>
         <div class="row ">
           <a href="#" class="col photo-1 rounded-2 nav-link d-flex align-items-center justify-content-center flex-column m-2">
-            <h3 class="text-white text-center">Click & Collect</h3>
+            <h3 class="text-white text-center size-3">Click & Collect</h3>
             <p class="text-white text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
           </a>
           <a href="#" class="col photo-1 rounded-2 nav-link d-flex align-items-center justify-content-center flex-column m-2">
-            <h3 class="text-white text-center">Service</h3>
+            <h3 class="text-white text-center size-3">Service</h3>
             <p class="text-white text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
           </a>
           <a href="#" class="col photo-1 rounded-2 nav-link d-flex align-items-center justify-content-center flex-column m-2">
-            <h3 class="text-white text-center">Öffentlicher Raum</h3>
+            <h3 class="text-white text-center size-3">Öffentlicher Raum</h3>
             <p class="text-white text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
           </a>
         </div>
@@ -450,10 +411,10 @@ defer>
       </div>
     </section>
   </div>
+  <!-- End 6 grid  section-->
 
 
-
-  <!-- logos section -->
+  <!--  start logos section -->
   <div class="container overflow-hidden h-100 mt-5">
     <hr>
     <div class="row align-items-center h-100">
@@ -480,18 +441,18 @@ defer>
   
     <hr>
   </div>
+  <!--  end logos section -->
 
+<!-- start blog  section-->
 
-<!-- blog -->
-
-<section id="blogs" class="bg-light p-5">
-  <h2 class="text-center mb-3">Aktuelles Nachichten</h2>
-<div class="container">
+<section id="blogs" class="bg-light shadow-sm p-5">
+  <div class="container">
+  <h2 class="size-2 mb-5">Aktuelles Nachichten</h2>
   <div class="card-group">
     <div class="card">
       <img s src="./img/Servicebox_Paketstation_click_collect.jpg" class="card-img-top h-50" alt="...">
       <div class="card-body">
-        <h5 class="card-title"> title</h5>
+        <h5 class="card-title "> title</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
       <div class="card-footer">
@@ -521,43 +482,42 @@ defer>
   </div>
 </div>
 </section>
+<!-- End blog section -->
 
-
-<!-- icons svg -->
-
+<!-- start icons svg  section-->
 <section id="iconlockers">
   <div class="container">
-<div class="d-flex justify-content-center align-content-center text-center">
-    <a href="#" class="col nav-link">
+<div class="row align-content-center text-center justify-content-center">
+    <a href="#" class="col-md-2 nav-link shadow-sm p-3 icon">
       <img src="./img/iconTwo.svg" alt="">
-      <h5 class="text-danger text-center">Cool Locker</h5>
+      <h3 class="text-danger text-center mt-2">Cool Locker</h3>
       <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, nesciunt.</p>
     </a>
-    <a href="#" class="col nav-link">
+    <a href="#" class="col-md-2  nav-link shadow-sm p-3 icon">
       <img src="./img/iconThree.svg" alt="">
-      <h5 class="text-danger text-center">ServiceBox</h5>
+      <h3 class="text-danger text-center mt-2">ServiceBox</h3>
       <p class="text-center">Lorem ipsum dolor sit amet.</p>
     </a>
-    <a href="#" class="col nav-link">
+    <a href="#" class="col-md-2 nav-link shadow-sm p-3 icon">
       <img src="./img/iconFour.svg" alt="">
-      <h5 class="text-danger text-center">Velosafe</h5>
+      <h3 class="text-danger text-center mt-2">Velosafe</h3>
       <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos.</p>
     </a>
-    <a href="#" class="col nav-link">
+    <a href="#" class="col-md-2 nav-link shadow-sm p-3 icon">
       <img src="./img/iconFive.svg" alt="">
-      <h5 class="text-danger text-center">Locksafe</h5>
+      <h3 class="text-danger text-center mt-2">Locksafe</h3>
       <p class="text-center">Lorem ipsum dolor sit amet.</p>
     </a>
-    <a href="#" class="col nav-link">
+    <a href="#" class="col-md-2 nav-link shadow-sm p-3 icon">
       <img src="./img/iconOne.svg" alt="">
-      <h5 class="text-danger text-center">Palettenbox</h5>
+      <h3 class="text-danger text-center mt-2">Palettenbox</h3>
       <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis nam sint facere libero tempore maiores.</p>
     </a>
     
   </div>
   </div>
 </section>
-
+<!-- end icons svg  section-->
 
 
 <!-- footer -->
@@ -638,19 +598,31 @@ defer>
   </div>
     
 </section>
-<!--       
-<li class="nav-link ms-2">
-  <form action="https://duckduckgo.com/" method="get" id="form-search" class="d-flex" role="search">
-    <input class="form-control me-2" type="search" name="q" id="input-search" placeholder="Search" aria-label="Search">
-    <input type="hidden" name="sites" value="your-domain.com">
-    <div id="search-results"></div>
-  </form>
-  </li> -->
 
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<!-- End footer -->
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/62a82edbb0d10b6f3e773793/1g5gl8amh';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+
+
+<script src="jquery.js"></script>
+<script src="owl.carousel.min.js"></script>
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/ca11177b7a.js" crossorigin="anonymous"></script>
+
   <script src="app.js"></script>
 </body>
 </html>
