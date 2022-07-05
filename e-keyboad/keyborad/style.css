@@ -1,0 +1,42 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card{
+  height: 454px;
+  width: 952px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+
+}
+
+.card-name-input,.card-message-input{
+  display: block;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: 20px 20px;
+}
+
+
+
+
+
+.btn-key{
+  padding: 15px 60px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+  color: #fff;
+  background: #333;
+  
+}
