@@ -1,4 +1,5 @@
-
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
 // const tl = gsap.timeline({
 //   scrollTrigger: {
@@ -222,6 +223,7 @@ let searchIndex = [
 
 var owl = $('.owl-carousel');
 owl.owlCarousel({
+
     items:1,
     loop:true,
     margin:10,
