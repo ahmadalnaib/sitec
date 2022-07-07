@@ -22,7 +22,7 @@
     <nav class="navbar fixed-top navbar-expand-lg  bg-white p-4">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img class="" width="100px" src="./img/LockTec-Logo_2021-1-_3_-1-_1_.webp" alt="">
+          <img  class="lazyload" width="100px" data-src="./img/LockTec-Logo_2021-1-_3_-1-_1_.webp" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon "></span>
@@ -110,9 +110,9 @@
         <li class="nav-item">
           <a href="#" class="nav-link border-bottom text-white" aria-current="page"  title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-4 lock-icon">
                 
-                <i class="bi bi-envelope fa-2x "></i> 
+                <i class="bi bi-envelope-fill fa-2x"></i>
               </div>
               <div class="col-md-6 text-center align-content-center justify-content-center mt-2">
 
@@ -126,9 +126,9 @@
         <li class="nav-item">
           <a href="#" class="nav-link border-bottom text-white" aria-current="page"  title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-4 lock-icon">
                 
-                <i class="bi bi-telephone fa-2x "></i> 
+                <i class="bi bi-telephone-fill fa-2x"></i>
               </div>
               <div class="col-md-6 text-center align-content-center justify-content-center mt-2">
 
@@ -137,15 +137,13 @@
             </div>
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item ">
           <a href="#" class="nav-link border-bottom text-white" aria-current="page"  title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
-            <div class="row">
-              <div class="col-md-4">
-                
-                <i class="bi bi-megaphone fa-2x"></i>
+            <div class="row lock-icon">
+              <div class="col-md-4 ">
+                <i class="bi bi-megaphone-fill fa-2x"></i>
               </div>
               <div class="col-md-6 text-center align-content-center justify-content-center mt-2">
-
                 <h4 class="">Actions</h4>
               </div>
             </div>
@@ -153,7 +151,7 @@
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link border-bottom text-white" aria-current="page"  title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
-            <div class="row">
+            <div class="row lock-icon">
               <div class="col-md-4">
                 
                 <i class="bi bi-newspaper fa-2x"></i>
@@ -470,15 +468,15 @@
         <div class="col-6 col-md-2 mb-3">
           <h5>Navigation</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Anwendung</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Konfigurator</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Software</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Über uns</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kontakt</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">News</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Actions</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Service</a></li>
+            <li><a href="#" class="nav-link p-0 text-muted mb-2 p-0">Home</a></li>
+            <li><a href="#" class="nav-link p-0 text-muted mb-2 p-0">Anwendung</a></li>
+            <li><a href="#" class="nav-link p-0 text-muted mb-2 p-0">Konfigurator</a></li>
+            <li><a href="#" class="nav-link p-0 text-muted mb-2 p-0">Software</a></li>
+            <li><a href="#" class="nav-link p-0 text-muted mb-2 p-0">Über uns</a></li>
+            <li><a href="#" class="nav-link p-0 text-muted mb-2 p-0">Kontakt</a></li>
+            <li><a href="#" class="nav-link p-0 text-muted mb-2 p-0">News</a></li>
+            <li><a href="#" class="nav-link p-0 text-muted mb-2 p-0">Actions</a></li>
+            <li><a href="#" class="nav-link p-0 text-muted mb-2 p-0">Service</a></li>
             
           </ul>
         </div>
@@ -486,10 +484,14 @@
         <div class="col-6 col-md-2 mb-3">
           <h5>Produkte</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cool Lockers</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Locksafe</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Servicbox</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Velosafe</a></li>
+            <li><a  class="nav-link p-0 text-muted mb-2 p-0" href="#">Cool Lockers</a></li>
+            <li><a  class="nav-link p-0 text-muted mb-2 p-0" href="#">Locksafe</a></li>
+            <li><a  class="nav-link p-0 text-muted mb-2 p-0" href="#">ServiceBox</a></li>
+            <li><a  class="nav-link p-0 text-muted mb-2 p-0" href="#">Smartterminal</a></li>
+            <li><a  class="nav-link p-0 text-muted mb-2 p-0" href="#">Velosafe</a></li>
+            <li><a  class="nav-link p-0 text-muted mb-2 p-0" href="#">ServiceBox Basic</a></li>
+            <li><a  class="nav-link p-0 text-muted mb-2 p-0" href="#">Locksafe Mechanic</a></li>
+            <li><a  class="nav-link p-0 text-muted mb-2 p-0" href="#">Servicepoint</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Palettenbox</a></li>
           </ul>
         </div>
@@ -497,13 +499,13 @@
         <div class="col-6 col-md-2 mb-3">
           <h5>Hilfe</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">AGB</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Datenschutz</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Downloads</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Karriere</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Impressum</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cookies</a></li>
+            <li><a href="#" class="nav-link p-0 text-muted mb-2 p-0">AGB</a></li>
+            <li><a href="#" class="nav-link p-0 text-muted mb-2 p-0">Datenschutz</a></li>
+            <li><a href="#" class="nav-link p-0 text-muted  mb-2 p-0">Downloads</a></li>
+            <li><a href="#" class="nav-link p-0 text-muted  mb-2 p-0">Karriere</a></li>
+            <li><a href="#" class="nav-link p-0 text-muted  mb-2 p-0">Impressum</a></li>
+            <li><a href="./faq.html" class="nav-link p-0 text-muted  mb-2 p-0">FAQs</a></li>
+            <li><a href="#" class="nav-link p-0 text-muted  mb-2 p-0">Cookies</a></li>
           </ul>
         </div>
   
@@ -521,7 +523,7 @@
           <div class="mt-5">
             <a href="#">
 
-              <img style="height:40px ;" src="./img/sitec-logo.svg" alt="">
+              <img class="lazyload" style="height:40px ;" data-src="./img/sitec-logo.svg" alt="">
             </a>
           </div>
         </div>
