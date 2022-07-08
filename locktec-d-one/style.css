@@ -33,6 +33,15 @@ h3{
   font-size: 18px;
 }
 
+.lockhover{
+ transition: all .1s ease-in-out; 
+}
+.lockhover:hover{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  
+}
+
+
 .m-t{
 margin-top: 8rem;
 }
@@ -126,37 +135,43 @@ height: 50vh;
   background: transparent !important;
 }
 
-.owl-prev span,.owl-next span{
-  color: #fff;
+
+.owl-prev{
+  position: absolute;
+  right : 40px;
+  bottom: -60px;
+
+}
+.owl-prev span{
+  color: #ce111e;
   font-size: 3rem;
- 
+}
+
+.owl-next{
+  position: absolute;
+  right : 20px;
+  bottom: -60px;
+}
+.owl-next span{
+  color: #ce111e;
+  font-size: 3rem;
+}
+
+.owl-dots{
+  position: absolute;
 }
 
 .owl-theme .owl-dots .owl-dot span{
   
-  background: #fff;
+  background: #333;
+
 }
 
 .owl-dot.active span {
-  background: #000 !important;
+  background: #ce111e !important;
 
 }
 
-/* .owl-prev span {
-  color: #333;
-  font-size: 3rem;
-  position: absolute;
-  bottom: -15px;
-  left: 1240px;
- 
-}
-.owl-next span{
-  color: #333;
-  font-size: 3rem;
-  position: absolute;
-  bottom: -15px;
-  left: 1270px;
-} */
 
 /* Slider section end */
 
@@ -506,7 +521,7 @@ padding: 2rem;
 .swiper {
   width: 100%;
    padding: 8rem;
-   background-image: linear-gradient(to top, #eff1f4 0%, #eff1f4 99%, #eff1f4 100%);
+   background: linear-gradient(to top, #eff1f4 0%, #eff1f4 99%, #eff1f4 100%);
   margin-top: 1rem;
 }
 
@@ -546,6 +561,8 @@ background: #fff;
   font-size: 17px;
   
 }
+
+
 
 
 
