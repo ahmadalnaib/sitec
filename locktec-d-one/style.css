@@ -4,6 +4,9 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+a.active {
+ border-bottom:4px solid #ce111e;
+}
 
 .navbar-margin{
   margin-bottom: 10rem;
@@ -86,6 +89,17 @@ color: #fff;
 {
   margin-top: 8rem !important;
 }
+
+#description{
+margin-top: 12rem !important;
+}
+
+
+
+#lo-space{
+  margin-top: 6rem;
+}
+
 
 
 /* end section  *  */
@@ -276,7 +290,27 @@ padding: 2rem;
   margin-top: 8rem;
 }
 .photo-1{
-  background: linear-gradient(to right,rgba(51, 51, 51,0.5),rgba(51, 51, 51,0.7)),url('./img/aa.webp')no-repeat center center/cover;
+  background: linear-gradient(to right,rgba(51, 51, 51,0.5),rgba(51, 51, 51,0.7)),url('./img/zahlreiche/cool.lockers_gekuehlteAbholfaecher_Pickup_\ \(1\).jpg')no-repeat center center/cover;
+  height: 20vh;
+}
+.photo-2{
+  background: linear-gradient(to right,rgba(51, 51, 51,0.5),rgba(51, 51, 51,0.7)),url('./img/zahlreiche/Locksafe5_Wiesbaden_Luisenforum.jpg')no-repeat center center/cover;
+  height: 20vh;
+}
+.photo-3{
+  background: linear-gradient(to right,rgba(51, 51, 51,0.5),rgba(51, 51, 51,0.7)),url('./img/zahlreiche/Locksafe_Schliessfaecher_Flughafen.jpg')no-repeat center center/cover;
+  height: 20vh;
+}
+.photo-4{
+  background: linear-gradient(to right,rgba(51, 51, 51,0.5),rgba(51, 51, 51,0.7)),url('./img/zahlreiche/Servicebox_click_collect.jpg')no-repeat center center/cover;
+  height: 20vh;
+}
+.photo-5{
+  background: linear-gradient(to right,rgba(51, 51, 51,0.5),rgba(51, 51, 51,0.7)),url('./img/zahlreiche/cool.lockers_gekuehlteAbholfaecher_Pickup__2_\ \(1\).jfif')no-repeat center center/cover;
+  height: 20vh;
+}
+.photo-6{
+  background: linear-gradient(to right,rgba(51, 51, 51,0.5),rgba(51, 51, 51,0.7)),url('./img/zahlreiche/Stadtwerke_Bamberg_Locksafe.jpg')no-repeat center center/cover;
   height: 20vh;
 }
 /* end  grid-six section*/
@@ -291,11 +325,11 @@ padding: 2rem;
 .logos{
   width: 100%;
   display: inline-block;
-  margin: 0px 0;
+  margin: 0px 10px;
 }
 
 .fab{
-  width: calc(100% / 5);
+  width: calc(100% / 6);
   animation: fade-in 0.5s 
     cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
 }
@@ -568,3 +602,14 @@ background: #fff;
 
 /* end contac pagr */
 
+/* news page */
+
+
+.img-size img{
+ width: 265px;
+ height: 265px;
+background-size: contain;
+margin-right: 1rem;
+}
+
+/* news page */
