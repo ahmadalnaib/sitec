@@ -1,0 +1,56 @@
+<svg class="svg-illustration svg-illustration--ip-space-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 585 488" xml:space="preserve">
+	<g id="globe" class="animation-element" data-animation-globe="" >
+		<path class="svg-ip-space-center-st0" d="M203.4,369.5c47.8-27.6,125.4-27.6,173.2-0.1s47.8,72.1,0,99.7s-125.4,27.6-173.2,0.1S155.5,397,203.4,369.5z"></path>
+		<circle class="svg-ip-space-center-st1" cx="292.2" cy="228.2" r="194.9"></circle>
+		<g>
+			<clipPath id="svg-ip-space-center-clip-4">
+				<use xlink:href="#svg-ip-space-center-clip-2"></use>
+			</clipPath>
+			<path class="svg-ip-space-center-st2" d="M472.5,166.8l-26,9l-12,41l7,24l23,13l9,9l-2,21l-6,20l-3,21l43-25l-3-121L472.5,166.8zM342.5,49.8L317,61.3l-5.5,31.5l10,23l34-20l39-1l26-7l-44-30L342.5,49.8z M327.9,274.6l-2.1-8.5l6.3-6.3l8.4,10.6c0,0,5.6,9,2.1,8.5S327.9,274.6,327.9,274.6L327.9,274.6z M299.1,423.1l28.4-24.9v-23.5l-18.8-25.2l-2.1-33.5l25.1-21l10.4,6.3l14.6-6.3l20.9,14.7l12.5,4.2l29.3-6.3l8.4,12.6l-20.9,44l-8.4,18.9l-14.6,4.2l-16.7,8.9l-36.5,24.6c-10.3,3.6-20.8,6.3-31.6,8.1V423.1L299.1,423.1z M119.9,328.4l28.1,1.3l25.3,2.7c0,0-13.4,32.8,0,31.8s10.6,10.6,10.6,10.6l-12.6,8.8
+C149.6,366,132,353.8,119.9,328.4L119.9,328.4z M299.7,102.4l-23.2,0.4l-3.1-6.4l-7.9,10.5l-12.1-1.6l-7.9,28.4L200,121.5l-41.8,4.2l-19.7,44.4c-1,2.3-2,4.6-3,6.9l14.3,5.3l16.7-14.7l29.3,4.2l18.8,33.1v31.4l16.7,23.1l14.6,8.4l10.4,18.9l20.9,4.2l25.1,16.8l2.1-21l-12.5-6.3l2.1-8.4l-6.3-4.2l-12.5,10.5l2.1-16.8l16.5-18.4l20.7-2.5v18.9l10.5-6.3l12.5-29.3l27.2-14.7
+l2.1-10.5l6.7,1.6l6.4-11.6l-2.1-12.6h-12.5l7.9-18.4l18.8-2.6l-48.2-12l-12.5-4.2l-6.7,24.9l-22-8l-2-27l14.7-4.6l-13.7-6.9L299.7,102.4z"></path>
+		</g>
+		<g>
+			<clipPath id="svg-ip-space-center-clip-3">
+				<use xlink:href="#svg-ip-space-center-clip-1"></use>
+			</clipPath>
+			<g id="lines" class="svg-ip-space-center-st3">
+				<path class="svg-ip-space-center-st4" d="M442.4,103.2c1.1,23.1-13.6,46.4-44.1,64c-58.8,34-154.1,34.1-212.8,0.1c-30.5-17.6-45.2-41-44-64.1"></path>
+				<path class="svg-ip-space-center-st4" d="M339.8,39.1c26.4,15.2,26.4,40,0,55.2s-69.2,15.3-95.5,0.1s-26.4-40,0-55.2"></path>
+				<path class="svg-ip-space-center-st4" d="M475.6,160c0.2,27.3-17.7,54.7-53.8,75.6c-71.7,41.5-188,41.6-259.6,0.2c-35.6-20.6-53.5-47.5-53.7-74.5"></path>
+				<path class="svg-ip-space-center-st4" d="M486,250.6c-7.6,21-25.6,41.1-53.8,57.4c-77.4,44.8-203,44.9-280.4,0.2c-27.4-15.8-45.1-35.1-53.1-55.5"></path>
+				<path class="svg-ip-space-center-st4" d="M450.1,342.2c-8.3,11.9-20.8,23-37.4,32.6c-66.3,38.3-173.9,38.4-240.2,0.2c-10.6-5.9-20.3-13.4-28.8-22.1"></path>
+				<path class="svg-ip-space-center-st4" d="M208.6,403.7c-35.1-8.5-58.1-42.8-58.1-96.6c0-88.2,61.6-195.3,137.5-239.4c36-20.9,68.7-23.9,93.2-11.8"></path>
+				<path class="svg-ip-space-center-st4" d="M386.1,399.7c26.1-13.9,42.4-47.3,42.4-92.7c0-88.2-61.6-195.3-137.5-239.4c-29.7-17.2-57.1-22.3-79.6-16.8"></path>
+			</g>
+		</g>
+	</g>
+	<g id="lines-2">
+		<path class="svg-ip-space-center-st5 " data-animation-line="" d="M264,421.5c-73.6,23.6-128.5-20.6-128.5-111.5c0-105.2,73.7-233.1,164.5-285.7s164.5-10,164.5,95.2c0,5.3-0.2,10.6-0.5,16" stroke-dasharray="809.450927734375"></path>
+		<path class="svg-ip-space-center-st5 " data-animation-line="" d="M446.6,108.9c8.3,3.7,16.3,7.7,24.1,12.2c98.4,56.6,98.3,148.4-0.1,205.1s-258,56.8-356.4,0.2s-98.3-148.4,0.1-205.1c7.8-4.5,15.8-8.5,23.9-12.2" stroke-dasharray="953.700927734375"></path>
+		<path class="svg-ip-space-center-st5 " data-animation-line="" d="M311,422.5c78.6,30.1,138.5-14.5,138.5-109.8C449.5,206.2,375,76.8,283,23.6s-166.5-10.1-166.5,96.3c0,6.9,0.3,13.8,0.9,20.9" stroke-dasharray="832.7351684570312"></path>
+	</g>
+	<g id="dots">
+		<path class="svg-ip-space-center-st6 animation-element" data-animation-dot="" d="M264.5,238.9c2.7,0,4.9,2.2,4.9,4.9s-2.2,4.9-4.9,4.9s-4.9-2.2-4.9-4.9c0,0,0,0,0,0C259.6,241.1,261.8,238.9,264.5,238.9z M159.1,336.9c2.9,0.1,5.3,2.5,5.3,5.4c0.1,2-1.5,3.7-3.5,3.8c-0.3,0-0.6,0-0.9-0.1c-2.3-0.4-4.1-2.2-4.5-4.5c-0.5-2,0.6-4,2.6-4.5C158.4,336.9,158.7,336.9,159.1,336.9z M332.5,184.9c2.7,0,4.9,2.2,4.9,4.9c0,2.7-2.2,4.9-4.9,4.9c-2.7,0-4.9-2.2-4.9-4.9C327.6,187.1,329.8,184.9,332.5,184.9L332.5,184.9z" ></path>
+		<circle class="svg-ip-space-center-st6 animation-element" data-animation-dot="" cx="224.5" cy="183.8" r="4.9" ></circle>
+		<path class="svg-ip-space-center-st6 animation-element" data-animation-dot="" d="M462.5,225.5c2.1,0.4,3.8,2.8,3.9,5.4c0.1,2.7-1.5,4.7-3.7,4.4c-2.2-0.3-4.1-2.9-4.1-5.7C458.6,226.9,460.3,225.1,462.5,225.5z" ></path>
+		<path class="svg-ip-space-center-st6 animation-element" data-animation-dot="" d="M336.5,332.8c2.8,0,4.4,2.8,3.8,5.6c-0.4,2.2-2.1,3.8-4.3,3.9c-2.1-0.1-3.8-1.8-3.9-3.9C331.8,335.6,333.8,332.8,336.5,332.8z" ></path>
+	</g>
+	<defs>
+		<circle id="svg-ip-space-center-clip-2" cx="292.2" cy="228.2" r="194.9"></circle>
+		<circle id="svg-ip-space-center-clip-1" cx="292.2" cy="228.2" r="194.9"></circle>
+	
+		<linearGradient id="svg-ip-space-center-gradient-1" gradientUnits="userSpaceOnUse" x1="289.9849" y1="348.7574" x2="289.9849" y2="489.7524">
+			<stop offset="0" ></stop>
+			<stop offset="1" ></stop>
+		</linearGradient>
+		<linearGradient id="svg-ip-space-center-gradient-2" gradientUnits="userSpaceOnUse" x1="163.8095" y1="380.7496" x2="438.647" y2="105.912">
+			<stop offset="0"></stop>
+			<stop offset="1"></stop>
+		</linearGradient>
+		<linearGradient id="svg-ip-space-center-gradient-3" gradientUnits="userSpaceOnUse" x1="154.3776" y1="366.0804" x2="430.0644" y2="90.3936">
+			<stop offset="1.000000e-02" ></stop>
+			<stop offset="1"></stop>
+		</linearGradient>
+	</defs>
+</svg>
