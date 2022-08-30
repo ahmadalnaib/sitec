@@ -8,6 +8,9 @@ body {
  border-bottom:4px solid #ce111e;
 } */
 
+html {
+  scroll-behavior: smooth;
+}
 
 
 .navbar-margin{
